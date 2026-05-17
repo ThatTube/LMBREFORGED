@@ -1,4 +1,4 @@
-package net.ttg.reforgedlmb;
+package net.ttg.neoforgedlmb;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
