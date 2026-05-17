@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "neoforgedlmb:block/craked_polished_blackstone"
+  }
+}

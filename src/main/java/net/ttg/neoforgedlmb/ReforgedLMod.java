@@ -14,6 +14,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.ttg.neoforgedlmb.block.ModBlocks;
+import net.ttg.neoforgedlmb.item.ModCreativeModeTabs;
 import net.ttg.neoforgedlmb.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,7 +37,11 @@ public class ReforgedLMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,6 +58,14 @@ public class ReforgedLMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GREEN_MAGMA_CREAM);
+            event.accept(ModItems.GREEN_MAGMA_BUCKET);
+            event.accept(ModItems.RAW_MAGMA_BUCKET);
+            event.accept(ModItems.GERADOR_DE_WAVES);
+            event.accept(ModItems.STONE_CUIRLASS);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.GREEN_MAGMA_BLOCK);
+            event.accept(ModBlocks.POLISHED_CRACKED_BLACKSTONE_BLOCK);
         }
     }
 

@@ -1,3 +1,11 @@
 {
-  "item.neoforgedlmb.green_magma_cream": "Green Magma Cream"
+  "item.neoforgedlmb.green_magma_cream": "Green Magma Cream",
+  "item.neoforgedlmb.green_magma_bucket": "Green Magma Bucket",
+  "item.neoforgedlmb.raw_magma_bucket": "Raw Magma Bucket",
+  "item.neoforgedlmb.gerador_de_waves": "Waves Generator",
+  "item.neoforgedlmb.stone_cuirlass": "Stone Cuirlass",
+  "block.neoforgedlmb.green_magma_block": "Green Magma Block",
+  "block.neoforgedlmb.polished_cracked_blackstone_block": "Polished and Cracked Blackstone Block",
+  "creativetab.neoforgedlmb.lmb_items": "LMB ITEMS",
+  "creativetab.neoforgedlmb.lmb_blocks": "LMB BLOCKS"
 }
