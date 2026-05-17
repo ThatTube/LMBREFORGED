@@ -56,14 +56,14 @@ public class ReforgedLMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() == ModCreativeModeTabs.LMB_ITEMS_TAB) {
             event.accept(ModItems.GREEN_MAGMA_CREAM);
             event.accept(ModItems.GREEN_MAGMA_BUCKET);
             event.accept(ModItems.RAW_MAGMA_BUCKET);
             event.accept(ModItems.GERADOR_DE_WAVES);
             event.accept(ModItems.STONE_CUIRLASS);
         }
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+        if (event.getTabKey() == ModCreativeModeTabs.LMB_BLOCKS_TAB) {
             event.accept(ModBlocks.GREEN_MAGMA_BLOCK);
             event.accept(ModBlocks.POLISHED_CRACKED_BLACKSTONE_BLOCK);
         }
